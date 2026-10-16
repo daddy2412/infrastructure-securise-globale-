@@ -71,7 +71,7 @@
   .stat .num{font-family:'IBM Plex Mono', monospace; font-size:1.5rem; color:var(--cyan); font-weight:600;}
   .stat .lbl{font-size:0.78rem; color:var(--text-dim); margin-top:4px;}
 
-  /* HERO ENTRANCE ANIMATION — one orchestrated sequence, staggered */
+  /* HERO ENTRANCE ANIMATION */
   .hero-anim{opacity:0; transform:translateY(14px); animation:heroReveal 0.7s cubic-bezier(.16,.8,.3,1) forwards;}
   .hero-anim.d1{animation-delay:.05s;}
   .hero-anim.d2{animation-delay:.15s;}
@@ -88,7 +88,7 @@
   .sec-num{font-family:'IBM Plex Mono', monospace; color:var(--text-dim); font-size:0.85rem;}
   .sec-head h2{font-size:1.5rem; font-weight:600;}
 
-  /* SCROLL REVEAL — sections fade/rise into place once, on entry */
+  /* SCROLL REVEAL */
   .reveal{opacity:0; transform:translateY(20px); transition:opacity .6s ease, transform .6s cubic-bezier(.16,.8,.3,1);}
   .reveal.in-view{opacity:1; transform:translateY(0);}
   @media (prefers-reduced-motion: reduce){
@@ -463,7 +463,7 @@ Monitoring      ── Prometheus + exporters → <span class="hl">Grafana</span
 </footer>
 
 <script>
-  // Reveal sections on scroll — single, deliberate entrance per section, no repeated hover effects
+  // Reveal sections on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
