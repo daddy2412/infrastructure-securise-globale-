@@ -138,6 +138,22 @@
   .shot .cap{padding:12px 16px; font-family:'IBM Plex Mono', monospace; font-size:0.8rem; color:var(--text-dim); border-top:1px solid var(--panel-line);}
   .shot-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:16px;}
 
+  /* PROJET GENIA C21 */
+  .project-intro{color:var(--text-dim); font-size:0.98rem; max-width:760px; margin-bottom:24px;}
+  .project-intro b{color:var(--text); font-weight:500;}
+  .project-actions{display:flex; flex-wrap:wrap; gap:12px; margin-top:24px;}
+  .btn{
+    display:inline-block;
+    font-family:'IBM Plex Mono', monospace; font-size:0.82rem;
+    color:var(--cyan); border:1px solid rgba(79,216,201,0.4);
+    padding:10px 16px; border-radius:3px;
+    background:rgba(79,216,201,0.06);
+  }
+  .btn:hover{background:rgba(79,216,201,0.14);}
+  .btn.alt{color:var(--amber); border-color:rgba(232,163,61,0.4); background:rgba(232,163,61,0.06);}
+  .btn.alt:hover{background:rgba(232,163,61,0.14);}
+  .project-shot{margin-top:24px; margin-bottom:0;}
+
   /* ABOUT */
   .about-box{
     background:var(--panel); border:1px solid var(--panel-line); border-radius:4px; padding:28px;
@@ -168,7 +184,7 @@
   footer{border-top:1px solid var(--panel-line); padding:32px 0; margin-top:24px;}
   footer .wrap{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;}
   footer p{color:var(--text-dim); font-size:0.85rem; font-family:'IBM Plex Mono', monospace;}
-  footer .links{display:flex; gap:20px;}
+  footer .links{display:flex; gap:20px; flex-wrap:wrap;}
 
   @media (max-width:640px){
     .hero-stats{grid-template-columns:repeat(2,1fr);}
@@ -184,6 +200,7 @@
     <ul>
       <li><a href="#architecture">Architecture</a></li>
       <li><a href="#stack">Stack</a></li>
+      <li><a href="#genia-c21">GenIA C21</a></li>
       <li><a href="#resultats">Résultats</a></li>
       <li><a href="#about">Profil</a></li>
     </ul>
@@ -301,9 +318,85 @@ Monitoring      ── Prometheus + exporters → <span class="hl">Grafana</span
   </div>
 </section>
 
+<section id="genia-c21">
+  <div class="wrap reveal">
+    <div class="sec-head"><span class="sec-num">04</span><h2>Projet — GenIA C21, assistant virtuel</h2></div>
+
+    <p class="project-intro">
+      Assistant virtuel bilingue (EN / FR) développé pour <b>Century 21 Gold Key Realty</b> (Steinbach, MB) :
+      réponses aux questions sur les logements, gestion de la liste d'attente, signalement de problèmes
+      et tableau de bord d'administration. L'application est conteneurisée, publiée en production
+      sans aucun port entrant ouvert, et supervisée par l'infrastructure du laboratoire.
+    </p>
+
+    <div class="stack-grid">
+      <div class="stack-card cyan">
+        <h3>Application & déploiement</h3>
+        <ul>
+          <li><b>Python</b> + <b>Gunicorn</b> (port 5000)</li>
+          <li><b>Docker</b> + <b>Docker Compose</b></li>
+          <li><b>Kubernetes</b> — deployment, ingress, secret modèle</li>
+        </ul>
+      </div>
+      <div class="stack-card cyan">
+        <h3>Accès public</h3>
+        <ul>
+          <li><b>Cloudflare Tunnel</b> (cloudflared) — connexion sortante seulement</li>
+          <li><b>systemd override</b> — reprise auto après redémarrage</li>
+          <li><b>ZeroTier</b> — accès admin privé (SSH par clé)</li>
+        </ul>
+      </div>
+      <div class="stack-card amber">
+        <h3>Supervision & sécurité</h3>
+        <ul>
+          <li><b>Zabbix</b> — disponibilité et alertes</li>
+          <li><b>Wazuh</b> — SIEM, intégrité des fichiers</li>
+          <li><b>Prometheus + Grafana</b>, <b>Loki + Alloy</b> — métriques et journaux</li>
+        </ul>
+      </div>
+      <div class="stack-card amber">
+        <h3>Infrastructure hôte</h3>
+        <ul>
+          <li><b>Hyper-V</b> — 6 VM (Ubuntu + Windows Server)</li>
+          <li><b>Active Directory</b> — domaine du laboratoire</li>
+          <li><b>SVR-BACKUP</b> — sauvegardes</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="results" style="margin-top:24px;">
+      <div class="result-item"><span class="check mono">✓</span><p>Site en production sur c21assistant.daddyconnectit.com via Cloudflare Tunnel</p></div>
+      <div class="result-item"><span class="check mono">✓</span><p>Détection de type rançongiciel : dossier leurre surveillé par Wazuh (règle de niveau 12), testée avec succès</p></div>
+      <div class="result-item"><span class="check mono">✓</span><p>Alertes de bruit Zabbix filtrées : seules les alertes utiles sont conservées</p></div>
+      <div class="result-item"><span class="check mono">✓</span><p>Secrets exclus du dépôt, documentation d'exploitation complète</p></div>
+    </div>
+
+    <div class="shot project-shot">
+      <img src="./c21assistant-site.png" alt="Capture du site GenIA C21, assistant virtuel de Century 21 Gold Key Realty" loading="lazy">
+      <div class="cap">genia-c21 · interface de l'assistant · Century 21 Gold Key Realty</div>
+    </div>
+
+    <div class="tags" style="margin-top:20px;">
+      <span class="tag">Python</span>
+      <span class="tag">Docker</span>
+      <span class="tag">Kubernetes</span>
+      <span class="tag">Cloudflare Tunnel</span>
+      <span class="tag">Zabbix</span>
+      <span class="tag">Wazuh</span>
+      <span class="tag">Grafana</span>
+      <span class="tag">Loki</span>
+    </div>
+
+    <div class="project-actions">
+      <a class="btn" href="https://c21assistant.daddyconnectit.com" target="_blank" rel="noopener">Voir le site en ligne →</a>
+      <a class="btn alt" href="https://github.com/daddy2412/genia-c21" target="_blank" rel="noopener">Documentation technique sur GitHub →</a>
+    </div>
+  </div>
+</section>
+
 <section id="resultats">
   <div class="wrap reveal">
-    <div class="sec-head"><span class="sec-num">04</span><h2>Résultats concrets</h2></div>
+    <div class="sec-head"><span class="sec-num">05</span><h2>Résultats concrets</h2></div>
     <div class="results">
       <div class="result-item"><span class="check mono">✓</span><p>Infrastructure 100 % opérationnelle en production</p></div>
       <div class="result-item"><span class="check mono">✓</span><p>Site web public derrière Cloudflare Zero Trust — zéro port entrant ouvert</p></div>
@@ -317,7 +410,7 @@ Monitoring      ── Prometheus + exporters → <span class="hl">Grafana</span
 
 <section id="about">
   <div class="wrap reveal">
-    <div class="sec-head"><span class="sec-num">05</span><h2>Profil</h2></div>
+    <div class="sec-head"><span class="sec-num">06</span><h2>Profil</h2></div>
     <div class="about-box">
       <p>Architecte de solutions multi-cloud avec plus de 10 ans d'expérience en technologie, depuis mes débuts en 2014 dans la digitalisation chez <b style="color:var(--text)">FabricaInfo</b> (Fortaleza, Brésil). Diplômé EDE en télécommunications-électronique, avec 8+ ans d'expérience combinée en télécommunications et en électromécanique. Ce laboratoire personnel illustre ma spécialisation continue vers l'infrastructure IT et la cybersécurité, en complément de mon expertise en architecture cloud multi-plateforme et de mon expérience terrain en déploiement réseau.</p>
 
@@ -362,7 +455,9 @@ Monitoring      ── Prometheus + exporters → <span class="hl">Grafana</span
   <div class="wrap">
     <p>homelab_soc · documentation technique complète sur GitHub</p>
     <div class="links">
-      <a href="https://github.com/daddy2412/infrastructure-s-curis-e-globale" class="mono">github.com/daddy2412</a>
+      <a href="https://github.com/daddy2412/infrastructure-s-curis-e-globale" class="mono">homelab-soc</a>
+      <a href="https://github.com/daddy2412/genia-c21" class="mono">genia-c21</a>
+      <a href="https://github.com/daddy2412" class="mono">github.com/daddy2412</a>
     </div>
   </div>
 </footer>
