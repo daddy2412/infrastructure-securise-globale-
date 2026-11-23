@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daddy Mundele — Multi-Cloud Solutions Architect &amp; Cybersecurity</title>
-<meta name="description" content="Daddy Mundele — Multi-cloud solutions architect (AWS, Azure) with hands-on network infrastructure, IT endpoint support, and cybersecurity experience. Based in Manitoba, Canada.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
+  <title>Daddy Mundele | Multi-Cloud Solutions Architect &amp; IT Infrastructure</title>
+  <meta name="description" content="Daddy Mundele — Multi-cloud solutions architect specializing in AWS, Azure, network infrastructure, IT support, endpoint management and cybersecurity. Based in Manitoba, Canada.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -19,37 +20,34 @@
   </div>
 </div>
 
-
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a href="#top" class="brand">
+    <a href="#top" class="brand" aria-label="DaddyConnectIT home">
       <img src="assets/logo-icon.png" alt="DaddyConnectIT logo" class="brand-mark" width="34" height="34">
       <span class="brand-name">daddyconnectit</span>
     </a>
-    <nav class="site-nav" aria-label="Primary">
+    <nav class="site-nav" aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#it-services">IT Services</a>
       <a href="#lab">SOC Lab</a>
-      <a href="#carrefour">Community</a>
-      <a href="#genia-c21">GenIA</a>
-      <a href="#gallery">Gallery</a>
+      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#certs">Certifications</a>
       <a href="#contact" class="nav-cta">Contact</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation menu">
       <span></span><span></span><span></span>
     </button>
   </div>
-  <nav id="mobileNav" class="mobile-nav" aria-label="Mobile">
+  <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
+    <a href="#it-services">IT Services</a>
     <a href="#lab">SOC Lab</a>
-    <a href="#carrefour">Community</a>
-    <a href="#genia-c21">GenIA</a>
-    <a href="#gallery">Gallery</a>
+    <a href="#projects">Projects</a>
     <a href="#experience">Experience</a>
     <a href="#certs">Certifications</a>
     <a href="#contact">Contact</a>
@@ -57,75 +55,38 @@
 </header>
 
 <main id="main">
-
   <section class="hero" id="top">
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <p class="location-line">Saint-Pierre-Jolys, Manitoba, Canada</p>
         <h1>Daddy Mundele</h1>
-        <p class="role-line">Multi-Cloud Solutions Architect &mdash; Network Infrastructure &amp; Cybersecurity</p>
-        <p class="hero-desc">Ten years designing and running the infrastructure behind the screen: cloud
-        architecture on AWS and Azure, hands-on network deployment, enterprise endpoint support, and a
-        self-built security operations lab monitored around the clock.</p>
+        <p class="role-line">Multi-Cloud Solutions Architect | IT Infrastructure | Cybersecurity</p>
+        <p class="hero-desc">Technology professional with 10 years of experience across cloud architecture, network infrastructure, IT support and electromechanical environments. Hands-on experience with AWS, Microsoft Azure, Windows endpoint administration and a self-built security operations lab.</p>
         <div class="hero-actions">
           <a href="assets/Daddy_Mundele_CV.pdf" class="btn btn-primary">Download resume</a>
           <a href="#contact" class="btn btn-ghost">Get in touch</a>
         </div>
         <ul class="lang-line" aria-label="Languages">
-          <li>French — C1</li>
-          <li>English — C1</li>
-          <li>Portuguese — C1</li>
+          <li>French — C1</li><li>English — C1</li><li>Portuguese — C1</li>
         </ul>
       </div>
-
-      <div class="status-panel" role="img" aria-label="Mock system status panel showing lab infrastructure metrics">
-        <div class="status-panel-head">
-          <span class="dot dot-live" aria-hidden="true"></span>
-          <span>homelab-soc · live status</span>
-        </div>
+      <div class="status-panel" role="img" aria-label="Illustrative homelab system status panel">
+        <div class="status-panel-head"><span class="dot dot-live" aria-hidden="true"></span><span>homelab-soc · lab overview</span></div>
         <div class="status-rows">
-          <div class="status-row">
-            <span class="status-label">OPNsense firewall</span>
-            <span class="status-value ok">UP</span>
-          </div>
-          <div class="status-row">
-            <span class="status-label">Hyper-V hosts (2)</span>
-            <span class="status-value ok">HEALTHY</span>
-          </div>
-          <div class="status-row">
-            <span class="status-label">Wazuh SIEM/XDR</span>
-            <span class="status-value ok">ACTIVE</span>
-          </div>
-          <div class="status-row">
-            <span class="status-label">Cloudflare Zero Trust</span>
-            <span class="status-value ok">0 OPEN PORTS</span>
-          </div>
-          <div class="status-row">
-            <span class="status-label">Events processed / 24h</span>
-            <span class="status-value num">4,812</span>
-          </div>
-          <div class="status-row">
-            <span class="status-label">Brute-force attempts blocked</span>
-            <span class="status-value warn">126</span>
-          </div>
+          <div class="status-row"><span class="status-label">OPNsense firewall</span><span class="status-value ok">CONFIGURED</span></div>
+          <div class="status-row"><span class="status-label">Hyper-V hosts</span><span class="status-value ok">2 HOSTS</span></div>
+          <div class="status-row"><span class="status-label">Wazuh SIEM/XDR</span><span class="status-value ok">DEPLOYED</span></div>
+          <div class="status-row"><span class="status-label">Grafana monitoring</span><span class="status-value ok">DEPLOYED</span></div>
+          <div class="status-row"><span class="status-label">Cloudflare Zero Trust</span><span class="status-value ok">IN USE</span></div>
         </div>
-        <div class="status-foot">Simulated dashboard, styled after the lab's Grafana instance.</div>
+        <div class="status-foot">Project overview — not a live production telemetry feed.</div>
       </div>
     </div>
   </section>
 
-  <section class="strip">
+  <section class="strip" aria-label="Technology highlights">
     <div class="wrap strip-row">
-      <span>AWS</span>
-      <span>Microsoft Azure</span>
-      <span>Microsoft Intune</span>
-      <span>Active Directory</span>
-      <span>OPNsense</span>
-      <span>Hyper-V</span>
-      <span>Wazuh</span>
-      <span>Cisco Catalyst</span>
-      <span>Fortinet</span>
-      <span>Zero Trust</span>
+      <span>AWS</span><span>Microsoft Azure</span><span>Active Directory</span><span>Microsoft Intune</span><span>Microsoft Defender</span><span>OPNsense</span><span>Hyper-V</span><span>Wazuh</span><span>Cisco</span><span>Fortinet</span>
     </div>
   </section>
 
@@ -133,86 +94,103 @@
     <div class="wrap about-grid">
       <h2 class="section-heading">About</h2>
       <div class="about-body">
-        <p>I'm a multi-cloud solutions architect with over ten years across technology, network
-        infrastructure, IT support, and electromechanical engineering &mdash; a path that runs from cell towers
-        in Brazil to enterprise AWS deployments and endpoint administration to a security operations lab in my own basement.</p>
-        <p>AWS and Azure certified, with hands-on cybersecurity practice built through a personal lab
-        that replicates a complete SMB-grade IT environment: SIEM/XDR, network detection, endpoint
-        detection, and monitoring, all running behind a zero-trust perimeter with no open inbound
-        ports. I'm trilingual (French, English, Portuguese), self-directed, and comfortable in
-        demanding technical environments.</p>
+        <p>I'm a multi-cloud solutions architect with experience across technology, network infrastructure, IT support and electromechanical engineering — from telecom field deployments in Brazil to AWS cloud solutions, enterprise endpoint support and infrastructure projects in Canada.</p>
+        <p>My technical interests combine cloud architecture, Microsoft environments, cybersecurity and practical systems administration. I build and document hands-on lab environments to strengthen my skills in identity management, endpoint security, monitoring, network protection and backup operations. I'm trilingual in French, English and Portuguese.</p>
       </div>
     </div>
   </section>
 
   <section class="section section-alt" id="skills">
     <div class="wrap">
-      <h2 class="section-heading">Core skills</h2>
+      <h2 class="section-heading">Technical skills</h2>
       <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Cloud &amp; Architecture</h3>
-          <p>AWS, Microsoft Azure, multi-cloud solution design, AWS Well-Architected Framework.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Cybersecurity</h3>
-          <p>SIEM/XDR (Wazuh), network detection (Security Onion), endpoint detection (Huntress),
-          Microsoft Defender, Zero Trust architecture.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Identity &amp; Endpoint Management</h3>
-          <p>Active Directory, Azure AD, RBAC, Group Policy (GPO), Microsoft Intune, Company Portal,
-          Microsoft Defender, Conditional Access, MFA.</p>
-        </div>
-        <div class="skill-card">
-          <h3>IT Support &amp; Hardware</h3>
-          <p>Windows &amp; Microsoft Office deployment and activation, PC performance optimization,
-          hardware diagnostics &amp; repair (PCs, laptops, smartphones, electronics), backup &amp; recovery,
-          network printers &amp; scanners.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Networking</h3>
-          <p>TCP/IP, VPN, Cisco Catalyst, Fortinet FortiGate, structured cabling, fiber optics.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Automation &amp; Scripting</h3>
-          <p>PowerShell for lab deployment and configuration &mdash; RBAC, Intune enrollment, and
-          backup server provisioning scripted rather than clicked through manually.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Virtualization &amp; Monitoring</h3>
-          <p>Hyper-V (high availability), VMware, Grafana, Prometheus.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Field &amp; Operations</h3>
-          <p>4G/5G telecom deployment, tower climbing, work-at-height safety, team leadership.</p>
-        </div>
+        <article class="skill-card"><h3>Cloud &amp; Solution Architecture</h3><p>Amazon Web Services (AWS), Microsoft Azure, multi-cloud solution design, cloud infrastructure and AWS Well-Architected Framework.</p></article>
+        <article class="skill-card"><h3>Identity &amp; Access Management</h3><p>Active Directory, Azure AD / Microsoft Entra ID, user and group administration, RBAC, MFA and identity lifecycle concepts.</p></article>
+        <article class="skill-card"><h3>Endpoint Management</h3><p>Microsoft Intune, device enrollment, configuration profiles, compliance policies, Company Portal and endpoint administration.</p></article>
+        <article class="skill-card"><h3>Security &amp; Compliance</h3><p>Microsoft Defender, endpoint protection concepts, SIEM/XDR with Wazuh, network detection with Security Onion, Huntress and Zero Trust principles.</p></article>
+        <article class="skill-card"><h3>Windows &amp; Group Policy</h3><p>Windows deployment and optimization, Group Policy Objects (GPO), workstation configuration, troubleshooting and Microsoft 365 / Office installation.</p></article>
+        <article class="skill-card"><h3>Networking &amp; Infrastructure</h3><p>TCP/IP, DNS, DHCP, VPN, Cisco Catalyst, Fortinet FortiGate, OPNsense, structured cabling and fibre optics.</p></article>
+        <article class="skill-card"><h3>Virtualization &amp; Monitoring</h3><p>Hyper-V, VMware, virtual machine administration, Grafana, Prometheus and infrastructure monitoring.</p></article>
+        <article class="skill-card"><h3>Automation &amp; Scripting</h3><p>PowerShell and Bash for administration, configuration, deployment tasks, reporting and repeatable infrastructure workflows.</p></article>
+        <article class="skill-card"><h3>Hardware &amp; Field Operations</h3><p>PC and laptop diagnostics, hardware troubleshooting, telecom deployment, electronics, work-at-height safety and team coordination.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="section" id="lab">
+  <section class="section" id="it-services">
+    <div class="wrap">
+      <h2 class="section-heading">IT Services &amp; Technical Support</h2>
+      <p class="gallery-lede">Practical technical support and infrastructure services for users, small businesses and distributed environments.</p>
+      <div class="skills-grid">
+        <article class="skill-card"><h3>Active Directory &amp; User Administration</h3><p>User and group administration, account troubleshooting, access permissions and domain-joined workstation support.</p></article>
+        <article class="skill-card"><h3>Group Policy (GPO)</h3><p>Group Policy configuration and troubleshooting for Windows settings, security baselines, mapped resources and consistent workstation management.</p></article>
+        <article class="skill-card"><h3>Microsoft Intune &amp; Company Portal</h3><p>Device enrollment support, Company Portal access, endpoint configuration, application deployment and device compliance troubleshooting.</p></article>
+        <article class="skill-card"><h3>Microsoft Defender</h3><p>Endpoint security configuration support, protection status checks, security alert review and basic troubleshooting.</p></article>
+        <article class="skill-card"><h3>Windows Deployment &amp; Optimization</h3><p>Windows installation and configuration, driver and update troubleshooting, system cleanup, performance optimization and Microsoft Office setup.</p></article>
+        <article class="skill-card"><h3>PC &amp; Mobile Hardware Repair</h3><p>Hardware diagnostics and troubleshooting for desktop PCs, laptops and mobile devices, including component checks and peripheral issues.</p></article>
+        <article class="skill-card"><h3>Backup &amp; Recovery</h3><p>Backup configuration support, data protection practices, recovery preparation and restoration troubleshooting.</p></article>
+        <article class="skill-card"><h3>Printer &amp; Scanner Configuration</h3><p>Network and USB printer/scanner installation, driver setup, connectivity troubleshooting and print/scan testing.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="lab">
     <div class="wrap lab-grid">
       <div class="lab-copy">
-        <h2 class="section-heading">Featured project &mdash; Homelab SOC</h2>
-        <p class="lab-lede">A complete, monitored, and virtualized IT infrastructure, built and
-        run from home to practice real detection engineering &mdash; not just certifications.</p>
+        <h2 class="section-heading">Featured project — Homelab SOC</h2>
+        <p class="lab-lede">A virtualized and monitored IT infrastructure built at home to practise systems administration, detection engineering and cybersecurity operations.</p>
         <ul class="lab-list">
-          <li>OPNsense perimeter firewall with Hyper-V virtualization in high availability across
-          two physical hosts.</li>
-          <li>Full SOC stack: Wazuh for SIEM/XDR, Security Onion for network detection, Huntress
-          for endpoint detection.</li>
-          <li>Real-time monitoring with Grafana and Prometheus.</li>
-          <li>Public-facing services exposed securely through Cloudflare Zero Trust &mdash; zero
-          open inbound ports.</li>
-          <li>Role-based access control and Microsoft Intune for device and identity management,
-          plus a dedicated SVR_BACKUP server for backup and recovery &mdash; all provisioned and
-          configured through PowerShell scripts rather than manual setup.</li>
-          <li>Simulated brute-force attacks used to validate detection and alerting end to end.</li>
+          <li>OPNsense perimeter firewall and Hyper-V virtualization across two physical hosts.</li>
+          <li>Security stack including Wazuh SIEM/XDR, Security Onion network detection and Huntress endpoint protection.</li>
+          <li>Infrastructure monitoring with Grafana and Prometheus.</li>
+          <li>Public-facing services routed through Cloudflare Zero Trust, designed to avoid open inbound firewall ports.</li>
+          <li>Active Directory, Microsoft Intune, role-based access control and a dedicated backup server.</li>
+          <li>PowerShell automation for repeatable administration and deployment tasks.</li>
         </ul>
-        <a href="https://github.com/daddy2412/infrastructure-s-curis-e-globale" class="btn btn-ghost" target="_blank" rel="noopener">View the technical writeup on GitHub</a>
+        <a href="https://github.com/daddy2412/infrastructure-s-curis-e-globale" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">View technical write-up on GitHub</a>
       </div>
-      <div class="lab-diagram">
-        <img src="assets/lab-diagram.svg" alt="Diagram of the homelab SOC network: internet connects through an OPNsense firewall to two Hyper-V hosts running Wazuh, Security Onion, Grafana, and Prometheus, with public access routed through Cloudflare Zero Trust." width="560" height="500" loading="lazy">
+      <div class="lab-diagram"><img src="assets/lab-diagram.svg" alt="Homelab SOC architecture diagram showing firewall, Hyper-V hosts, security and monitoring services." width="560" height="500" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="wrap">
+      <h2 class="section-heading">Featured projects</h2>
+      <div class="project-list">
+        <article class="project-card" id="carrefour">
+          <div class="carrefour-grid">
+            <div>
+              <h3>Community IT Infrastructure — Carrefour St-Pierre</h3>
+              <p class="lab-lede">Designed and built infrastructure supporting <a href="https://carrefourstpierre.com" target="_blank" rel="noopener noreferrer">carrefourstpierre.com</a>, a francophone community portal for St-Pierre-Jolys, Manitoba.</p>
+              <ul class="lab-list">
+                <li>OPNsense firewall and a Hyper-V environment using two physical hosts.</li>
+                <li>Monitoring and security stack with Wazuh, Security Onion, Huntress, Grafana and Prometheus.</li>
+                <li>Public website access through Cloudflare Zero Trust.</li>
+                <li>Backup, virtual machine replication and recovery practices.</li>
+              </ul>
+              <a href="https://carrefourstpierre.com" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Visit Carrefour St-Pierre</a>
+            </div>
+            <div class="carrefour-diagram"><img src="assets/carrefour-infra-diagram.png" alt="Carrefour St-Pierre infrastructure architecture diagram." loading="lazy"></div>
+          </div>
+        </article>
+        <article class="project-card" id="genia-c21">
+          <div class="carrefour-grid">
+            <div>
+              <h3>GenIA C21 — Virtual Assistant</h3>
+              <p class="lab-lede">Built and deployed a bilingual English/French virtual assistant for Century 21 Gold Key Realty in Steinbach, Manitoba, available at <a href="https://c21assistant.daddyconnectit.com" target="_blank" rel="noopener noreferrer">c21assistant.daddyconnectit.com</a>.</p>
+              <ul class="lab-list">
+                <li>Python application served by Gunicorn and containerized with Docker Compose.</li>
+                <li>Published through a Cloudflare Tunnel.</li>
+                <li>Hosted on an Ubuntu virtual machine in a Hyper-V lab.</li>
+                <li>Monitoring with Zabbix, Wazuh, Prometheus, Grafana and Loki/Alloy.</li>
+                <li>Security detection rules tested in the lab environment.</li>
+              </ul>
+              <a href="https://github.com/daddy2412/genia-c21" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">View technical write-up</a>
+              <a href="https://c21assistant.daddyconnectit.com" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Visit live site</a>
+            </div>
+            <div class="carrefour-diagram"><img src="assets/genia-c21-site.png" alt="GenIA C21 virtual assistant website screenshot." loading="lazy"></div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -220,132 +198,64 @@
   <section class="section section-alt" id="gallery">
     <div class="wrap">
       <h2 class="section-heading">In the field</h2>
-      <p class="gallery-lede">Real deployments, not stock photos &mdash; from cell tower radio work
-      to enterprise rack builds and live monitoring.</p>
+      <p class="gallery-lede">Selected field deployments, infrastructure work and technical environments.</p>
       <div class="gallery-grid">
-        <figure><img src="assets/gallery/tower-closeup.jpg" alt="Close-up of 4G/5G radio equipment installed on a telecom tower." loading="lazy"><figcaption>4G/5G radio install, tower-side</figcaption></figure>
-        <figure><img src="assets/gallery/panel-wiring.jpg" alt="Structured cabling inside an electrical distribution panel on a tower site." loading="lazy"><figcaption>Structured cabling, panel wiring</figcaption></figure>
-        <figure><img src="assets/gallery/server-rack-1.jpg" alt="Server rack build with network switches and structured cabling." loading="lazy"><figcaption>Rack &amp; stack, network switches</figcaption></figure>
-        <figure><img src="assets/gallery/darktrace-rack.jpg" alt="DarkTrace network detection appliance mounted in a server rack." loading="lazy"><figcaption>DarkTrace NDR deployment</figcaption></figure>
-        <figure><img src="assets/gallery/patch-panel.jpg" alt="Wall-mounted structured cabling patch panel." loading="lazy"><figcaption>Structured cabling, patch panel</figcaption></figure>
-        <figure><img src="assets/gallery/grafana-srv-web01.jpg" alt="Live Grafana monitoring dashboard for SRV-WEB01 showing CPU, memory, disk and network metrics." loading="lazy"><figcaption>Live monitoring &mdash; SRV-WEB01</figcaption></figure>
-        <figure><img src="assets/gallery/aws-console.jpg" alt="Laptop showing the AWS console during an AWS Cloud Experience training session, with conference badge." loading="lazy"><figcaption>AWS Cloud Experience, hands-on session</figcaption></figure>
-        <figure><img src="assets/gallery/aws-event.jpg" alt="Daddy Mundele at the AWS Cloud Experience Brazil event." loading="lazy"><figcaption>AWS Cloud Experience BRA, 2022</figcaption></figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt" id="carrefour">
-    <div class="wrap carrefour-grid">
-      <div>
-        <h2 class="section-heading">Featured project &mdash; Community IT Infrastructure</h2>
-        <p class="lab-lede">Designed and built the production infrastructure behind
-        <a href="https://carrefourstpierre.com" target="_blank" rel="noopener">carrefourstpierre.com</a>,
-        the francophone community portal for St-Pierre-Jolys, Manitoba.</p>
-        <ul class="lab-list">
-          <li>OPNsense perimeter firewall with two Hyper-V hosts in high availability (failover
-          replication).</li>
-          <li>Full monitoring and detection stack: Wazuh SIEM/XDR, Security Onion NDR, Huntress
-          EDR, Grafana/Prometheus dashboards, with automated WhatsApp alerts.</li>
-          <li>Public site served securely through Cloudflare Zero Trust &mdash; zero open inbound
-          ports on the firewall.</li>
-          <li>Automated backups, VM replication, and regular restore testing.</li>
-        </ul>
-        <a href="https://carrefourstpierre.com" class="btn btn-ghost" target="_blank" rel="noopener">Visit carrefourstpierre.com</a>
-      </div>
-      <div class="carrefour-diagram">
-        <img src="assets/carrefour-infra-diagram.png" alt="Architecture diagram of the Carrefour Saint-Pierre IT infrastructure: Cloudflare Zero Trust in front of an OPNsense firewall, two Hyper-V hosts running Active Directory, the web server, Wazuh, Security Onion, monitoring, and internal services, with a supervision and security panel listing Wazuh, Security Onion, Huntress, and monitoring." loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="genia-c21">
-    <div class="wrap carrefour-grid">
-      <div>
-        <h2 class="section-heading">Featured project &mdash; GenIA C21 Virtual Assistant</h2>
-        <p class="lab-lede">Built and deployed a bilingual (EN / FR) virtual assistant for
-        Century 21 Gold Key Realty in Steinbach, Manitoba &mdash; live at
-        <a href="https://c21assistant.daddyconnectit.com" target="_blank" rel="noopener">c21assistant.daddyconnectit.com</a>.
-        It answers questions about housing, manages the waiting list, handles problem
-        reports, and includes an admin dashboard.</p>
-        <ul class="lab-list">
-          <li>Python application served by Gunicorn, containerized with Docker and Docker
-          Compose, with Kubernetes manifests (deployment, ingress, secrets template).</li>
-          <li>Published through a Cloudflare Tunnel &mdash; zero open inbound ports; a systemd
-          override makes the tunnel recover on its own after a reboot.</li>
-          <li>Hosted on an Ubuntu VM in a Hyper-V lab with an Active Directory domain
-          (six Windows and Linux VMs); private ZeroTier network and SSH keys for administration.</li>
-          <li>Monitored with Zabbix, Wazuh, Prometheus + Grafana, and Loki + Alloy; noisy
-          alerts tuned out so only useful ones remain.</li>
-          <li>Ransomware-style detection using a Wazuh decoy folder and a custom level-12 rule,
-          tested end to end.</li>
-        </ul>
-        <a href="https://github.com/daddy2412/genia-c21" class="btn btn-ghost" target="_blank" rel="noopener">View the technical writeup on GitHub</a>
-        <a href="https://c21assistant.daddyconnectit.com" class="btn btn-ghost" target="_blank" rel="noopener">Visit the live site</a>
-      </div>
-      <div class="carrefour-diagram">
-        <img src="assets/genia-c21-site.png" alt="Screenshot of the GenIA C21 virtual assistant website for Century 21 Gold Key Realty." loading="lazy">
+        <figure><img src="assets/gallery/tower-closeup.jpg" alt="4G/5G radio equipment installed on a telecom tower." loading="lazy"><figcaption>4G/5G radio installation</figcaption></figure>
+        <figure><img src="assets/gallery/panel-wiring.jpg" alt="Structured cabling inside an electrical distribution panel." loading="lazy"><figcaption>Structured cabling and panel wiring</figcaption></figure>
+        <figure><img src="assets/gallery/server-rack-1.jpg" alt="Server rack with network switches and structured cabling." loading="lazy"><figcaption>Rack and network deployment</figcaption></figure>
+        <figure><img src="assets/gallery/darktrace-rack.jpg" alt="Network detection appliance mounted in a server rack." loading="lazy"><figcaption>Network detection appliance</figcaption></figure>
+        <figure><img src="assets/gallery/patch-panel.jpg" alt="Structured cabling patch panel." loading="lazy"><figcaption>Structured cabling patch panel</figcaption></figure>
+        <figure><img src="assets/gallery/grafana-srv-web01.jpg" alt="Grafana infrastructure monitoring dashboard." loading="lazy"><figcaption>Infrastructure monitoring</figcaption></figure>
+        <figure><img src="assets/gallery/aws-console.jpg" alt="AWS console during a cloud training session." loading="lazy"><figcaption>AWS Cloud Experience</figcaption></figure>
+        <figure><img src="assets/gallery/aws-event.jpg" alt="At an AWS Cloud Experience event in Brazil." loading="lazy"><figcaption>AWS Cloud Experience Brazil, 2022</figcaption></figure>
       </div>
     </div>
   </section>
 
   <section class="section" id="experience">
     <div class="wrap">
-      <h2 class="section-heading">Experience</h2>
+      <h2 class="section-heading">Professional experience</h2>
       <ol class="timeline">
         <li class="timeline-item">
-          <div class="timeline-date">2020 &ndash; Present</div>
+          <div class="timeline-date">2020 – Present</div>
           <div class="timeline-body">
-            <h3>IT Support &amp; Hardware Repair Specialist <span>Independent / Field &amp; Remote Support</span></h3>
-            <p>End-to-end Windows OS and Microsoft Office installation, activation, and system
-            optimization; hardware diagnostics and repair for desktop PCs, laptops, smartphones,
-            and electronic devices; network printer/scanner installation and configuration, data
-            backup &amp; recovery, and endpoint administration (Active Directory, Microsoft Intune,
-            Company Portal, Microsoft Defender, and Group Policy / GPO).</p>
+            <h3>IT Support &amp; Hardware Repair Specialist <span>Independent | Field and Remote Support</span></h3>
+            <p>Provide technical support across Windows systems, Microsoft Office and endpoint environments. Perform operating system installation, configuration and optimization; diagnose desktop, laptop and mobile hardware issues; support backup and recovery tasks; and install and troubleshoot network printers and scanners. Work with Active Directory, Group Policy, Microsoft Intune, Company Portal and Microsoft Defender in endpoint administration and support contexts.</p>
           </div>
         </li>
         <li class="timeline-item">
-          <div class="timeline-date">2024 &ndash; 2025</div>
+          <div class="timeline-date">2024 – 2025</div>
           <div class="timeline-body">
-            <h3>IT Support Technician II/III &mdash; Network Infrastructure Deployment <span>WorkMarket (via AVASO) &mdash; Air Canada, GSB clients, Quebec</span></h3>
-            <p>Rack-and-stack installation of Fortinet FortiGate firewalls and Cisco Catalyst 9300
-            PoE+ switches; Citrix, Microsoft Intune, Company Portal, Active Directory, GPO, and
-            Microsoft Defender deployment; Windows/Office installation, PC optimization, automated
-            backup setup, printer/scanner configuration, and structured cabling rollout.</p>
+            <h3>IT Support Technician II/III — Network Infrastructure Deployment <span>WorkMarket (via AVASO) | Air Canada and GSB clients, Quebec</span></h3>
+            <p>Performed rack-and-stack installation and deployment activities involving Fortinet FortiGate firewalls and Cisco Catalyst 9300 PoE+ switches. Supported workstation and endpoint activities including Windows and Office installation, PC optimization, printer/scanner configuration, structured cabling, and work involving Citrix, Microsoft Intune, Company Portal, Active Directory, Group Policy and Microsoft Defender.</p>
           </div>
         </li>
         <li class="timeline-item">
-          <div class="timeline-date">2022 &ndash; 2024</div>
+          <div class="timeline-date">2022 – 2024</div>
           <div class="timeline-body">
-            <h3>Solutions Architect &mdash; Mytech APN <span>(AWS Partner)</span></h3>
-            <p>Designed and deployed AWS cloud architecture solutions for enterprise clients;
-            developed technical recommendations aligned with the AWS Well-Architected Framework.</p>
+            <h3>Solutions Architect <span>Mytech APN | AWS Partner</span></h3>
+            <p>Designed and deployed AWS cloud architecture solutions for enterprise clients and developed technical recommendations aligned with the AWS Well-Architected Framework.</p>
           </div>
         </li>
         <li class="timeline-item">
           <div class="timeline-date">2025</div>
           <div class="timeline-body">
-            <h3>Electromechanical Technician <span>Annexair &amp; Groupe International Beaulieu</span></h3>
-            <p>System configuration documentation, installation/testing compliance, spare-parts
-            management, lubrication and oil-sample analysis, root-cause analysis on recurring
-            failures.</p>
+            <h3>Electromechanical Technician <span>Annexair and Groupe International Beaulieu</span></h3>
+            <p>Prepared system configuration and installation/testing documentation, supported spare-parts management, performed lubrication and oil-sample analysis, and contributed to root-cause analysis of recurring failures.</p>
           </div>
         </li>
         <li class="timeline-item">
-          <div class="timeline-date">2020 &ndash; 2023</div>
+          <div class="timeline-date">2020 – 2023</div>
           <div class="timeline-body">
-            <h3>Electromechanical Technician <span>Shopping Bourbon &amp; Zaffari, Porto Alegre, Brazil</span></h3>
-            <p>Diagnosed and resolved complex electrical faults, trained maintenance staff, and
-            analyzed technical blueprints and schematics.</p>
+            <h3>Electromechanical Technician <span>Shopping Bourbon and Zaffari | Porto Alegre, Brazil</span></h3>
+            <p>Diagnosed and resolved electrical faults, supported maintenance activities, trained maintenance staff and interpreted technical blueprints and schematics.</p>
           </div>
         </li>
         <li class="timeline-item">
-          <div class="timeline-date">2018 &ndash; 2019</div>
+          <div class="timeline-date">2018 – 2019</div>
           <div class="timeline-body">
-            <h3>Team Leader &mdash; 4G/5G Telecom Projects <span>Huawei Technology &mdash; Brazil</span></h3>
-            <p>Led teams through cell-site swap and migration from 3G to 4G, including bandwidth
-            reservation for future 5G. Supervised radio equipment installation on towers and
-            rooftops under strict work-at-height safety protocols.</p>
+            <h3>Team Leader — 4G/5G Telecom Projects <span>Huawei Technology | Brazil</span></h3>
+            <p>Led teams during cell-site swaps and migrations from 3G to 4G, supervised radio equipment installation on towers and rooftops, and coordinated work under work-at-height safety procedures.</p>
           </div>
         </li>
       </ol>
@@ -356,22 +266,10 @@
     <div class="wrap">
       <h2 class="section-heading">Certifications &amp; education</h2>
       <div class="certs-grid">
-        <div class="cert-card">
-          <h3>AWS Certified Solutions Architect &ndash; Associate</h3>
-          <p>Amazon Web Services</p>
-        </div>
-        <div class="cert-card">
-          <h3>Microsoft Certified: Azure Administrator (AZ-104)</h3>
-          <p>Microsoft</p>
-        </div>
-        <div class="cert-card">
-          <h3>AWS Certified Cloud Practitioner</h3>
-          <p>Amazon Web Services</p>
-        </div>
-        <div class="cert-card">
-          <h3>Electrotechnology</h3>
-          <p>Institut Sup&eacute;rieur de Techniques Appliqu&eacute;es (IQAS &ndash; EDE), 2020&ndash;2024</p>
-        </div>
+        <article class="cert-card"><h3>AWS Certified Solutions Architect — Associate</h3><p>Amazon Web Services</p></article>
+        <article class="cert-card"><h3>Microsoft Certified: Azure Administrator (AZ-104)</h3><p>Microsoft</p></article>
+        <article class="cert-card"><h3>AWS Certified Cloud Practitioner</h3><p>Amazon Web Services</p></article>
+        <article class="cert-card"><h3>Electrotechnology</h3><p>Institut Supérieur de Techniques Appliquées (IQAS — EDE), 2020–2024</p></article>
       </div>
     </div>
   </section>
@@ -379,29 +277,47 @@
   <section class="section section-contact" id="contact">
     <div class="wrap contact-grid">
       <div>
-        <h2 class="section-heading">Get in touch</h2>
-        <p class="contact-lede">Open to cloud, infrastructure, IT support, and field technical roles across
-        Manitoba and beyond.</p>
+        <h2 class="section-heading">Let's connect</h2>
+        <p class="contact-lede">Open to opportunities in cloud architecture, IT infrastructure, endpoint support, systems administration and technical services across Manitoba and beyond.</p>
       </div>
       <div class="contact-details">
         <a href="mailto:daddymundele24@gmail.com">daddymundele24@gmail.com</a>
         <a href="tel:+18199988220">+1 819-998-8220</a>
-        <a href="https://www.linkedin.com/in/daddy-mundele-17ab4121b/" target="_blank" rel="noopener">linkedin.com/in/daddy-mundele</a>
-        <a href="https://github.com/daddy2412" target="_blank" rel="noopener">github.com/daddy2412</a>
+        <a href="https://www.linkedin.com/in/daddy-mundele-17ab4121b/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+        <a href="https://github.com/daddy2412" target="_blank" rel="noopener noreferrer">github.com/daddy2412</a>
       </div>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <span>&copy; <span id="year"></span> Daddy Mundele &middot; Saint-Pierre-Jolys, MB</span>
+    <span>&copy; <span id="year"></span> Daddy Mundele · Saint-Pierre-Jolys, Manitoba</span>
     <a href="#top">Back to top</a>
   </div>
 </footer>
 
 <script src="script.js"></script>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"c09746e27dec4b549a098ba3f756534c","r":1,"spa":2}' crossorigin="anonymous"></script>
+<script>
+  // Accessible fallback for the mobile navigation if script.js does not already handle it.
+  (function () {
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('mobileNav');
+    if (!toggle || !menu) return;
+    toggle.addEventListener('click', function () {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      menu.classList.toggle('is-open', !isOpen);
+    });
+    menu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        toggle.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('is-open');
+      });
+    });
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+  }());
+</script>
 </body>
 </html>
